@@ -89,3 +89,23 @@ This mode enables communication between containers across multiple Docker host m
 
 This mode allows a container to appear on the network as a physical host rather than as a container.
 
+
+### Additional Commands:
+
+
+##### Connect a container to a network.
+```
+docker network **connect** <network name> <container name>
+```
+
+##### Disconnect a container from a network.
+```
+docker network **disconnect** <network name> <container name>
+```
+
+##### Display detailed information on one or more networks.
+```
+docker network inspect <network name> <container name> # Inspection of a Network
+docker network inspect <container name> # Inspection of a Container
+```
+
